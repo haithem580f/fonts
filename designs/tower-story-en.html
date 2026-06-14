@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tower Story — EN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{ --gold:#c9a25f; --gold-soft:#d8b878; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{ font-family:'Almarai',sans-serif; background:#d9d5cd; min-height:100vh;
+    display:grid; place-items:center; padding:40px 20px; -webkit-font-smoothing:antialiased; }
+  .frame{ width:380px; border-radius:22px; overflow:hidden; box-shadow:0 18px 50px rgba(0,0,0,.22); }
+  .riyal{ display:inline-block; width:.92em; height:.92em; vertical-align:-.1em; }
+  .riyal path{ fill:currentColor; }
+  .tower{ height:760px; position:relative; color:#fff; background-size:cover; background-position:center;
+    background-image:linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,.78) 100%),
+      url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop'); }
+  .tower .badge-out{ position:absolute; top:20px; left:20px; background:rgba(20,18,14,.35);
+    color:var(--gold-soft); border:1px solid var(--gold-soft); font-weight:800; font-size:14px;
+    letter-spacing:.5px; padding:9px 16px; border-radius:8px; }
+  .tower .brand-out{ position:absolute; top:18px; right:18px; display:flex; align-items:center; gap:10px; }
+  .tower .brand-out .name{ font-weight:700; font-size:16px; }
+  .tower .brand-out .logo{ width:40px; height:40px; border-radius:50%; border:2px solid var(--gold);
+    display:grid; place-items:center; font-weight:800; color:var(--gold); background:rgba(0,0,0,.25); }
+  .tower .tbody{ position:absolute; left:24px; right:24px; bottom:96px; }
+  .tower .tloc{ display:flex; align-items:center; gap:12px; color:var(--gold-soft);
+    font-weight:700; font-size:16px; margin-bottom:6px; }
+  .tower .tloc::before{ content:""; width:34px; height:2px; background:#fff; display:inline-block; }
+  .tower h1{ font-size:46px; font-weight:800; line-height:1; }
+  .tower .tspecs{ margin-top:10px; font-weight:700; font-size:17px; opacity:.95; }
+  .tower hr{ border:none; border-top:1px solid rgba(255,255,255,.3); margin:16px 0; }
+  .tower .trent{ display:flex; align-items:center; justify-content:space-between; gap:14px; }
+  .tower .trent .label2{ font-size:15px; opacity:.85; }
+  .tower .trent .price{ font-weight:800; font-size:44px; display:flex; align-items:baseline; gap:8px; }
+  .tower .trent .price .per{ font-size:17px; font-weight:700; }
+  .tower .trent .av{ background:var(--gold-soft); color:#2a2114; font-weight:800; font-size:16px;
+    padding:12px 16px; border-radius:10px; white-space:nowrap; align-self:center; }
+  .tower .tcta{ margin-top:16px; background:linear-gradient(180deg,var(--gold-soft),var(--gold));
+    border-radius:14px; padding:16px 20px; color:#2a2114; display:flex; align-items:center;
+    justify-content:space-between; font-weight:800; font-size:20px; }
+  .tower .tcta .arrow{ width:34px; height:34px; border-radius:9px; background:rgba(0,0,0,.18);
+    display:grid; place-items:center; }
+  .tower .tphones{ position:absolute; left:24px; right:24px; bottom:52px; display:flex;
+    align-items:center; justify-content:center; gap:26px; color:var(--gold-soft); font-weight:800; font-size:17px; }
+  .tower .tphones span{ display:inline-flex; align-items:center; gap:8px; }
+  .tower .tphones svg{ width:18px; height:18px; fill:var(--gold-soft); }
+  .tower .tfoot{ position:absolute; left:0; right:0; bottom:14px; display:flex; align-items:center;
+    gap:10px; justify-content:center; color:#e7e0d2; font-weight:700; font-size:13.5px; }
+  .tower .tfoot .shield{ width:16px; height:16px; fill:var(--gold); }
+</style>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute"><defs>
+    <symbol id="riyal" viewBox="0 0 24 24"><path d="M5 3.2 l2.4 -.8 v8.05 l3.3 -1.1 V2 l2.4 -.8 v6.55 l3.6 -1.2 v2.25 l-3.6 1.2 v2.0 l3.6 -1.2 v2.25 l-3.6 1.2 c-.05 1.55 -.9 2.6 -2.55 3.15 l-5.15 1.72 v-2.25 l4.45 -1.48 c.6 -.2 .85 -.55 .85 -1.05 v-.35 l-5.3 1.77 v-2.25 l5.3 -1.77 v-2.0 l-5.3 1.77 v-2.25 l5.3 -1.77 V5.05 l-3.3 1.1 v8.0 l-2.4 .8 V6.95 L5 7.75 Z"/></symbol>
+  </defs></svg>
+
+  <div class="frame">
+    <div class="tower">
+      <div class="badge-out">FOR RENT</div>
+      <div class="brand-out"><div class="name">Real Estate Brokerage</div><div class="logo">R</div></div>
+      <div class="tbody">
+        <div class="tloc">Al Olaya, Riyadh</div>
+        <h1>Luxury Apartment</h1>
+        <div class="tspecs">3 Bedrooms&nbsp; • &nbsp;2 Bathrooms&nbsp; • &nbsp;180 m²</div>
+        <hr>
+        <div class="trent">
+          <div>
+            <div class="label2">Annual Rent</div>
+            <div class="price">50,000 <svg class="riyal"><use href="#riyal"/></svg> <span class="per">/ year</span></div>
+          </div>
+          <div class="av">Available Now</div>
+        </div>
+        <div class="tcta">Book Now — Limited Units <span class="arrow">›</span></div>
+      </div>
+      <div class="tphones">
+        <span><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>12930049506</span>
+        <span><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.3A10 10 0 1 0 12 2zm-2.7 6c.2 0 .4 0 .6.4l.9 2c.1.2.1.4 0 .5-.1.2-.1.3-.3.5l-.4.5c-.1.1-.3.2-.1.5.1.3.7 1.2 1.5 1.9 1 1 1.9 1.3 2.2 1.4.2.1.4.1.5-.1l.7-.9c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3 0 .1 0 .6-.2 1.2-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .2-3.2-.7-2.7-1-4.4-3.7-4.5-3.9-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.3.5-.4.7-.4z"/></svg>12930049506</span>
+      </div>
+      <div class="tfoot">
+        <svg class="shield" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3z"/></svg>
+        Fal License: 1100001234 &nbsp;•&nbsp; C/R 7200123456
+      </div>
+    </div>
+  </div>
+</body>
+</html>

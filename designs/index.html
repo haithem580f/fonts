@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Real Estate Designs — Almarai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet" />
+<style>
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{ font-family:'Almarai',sans-serif; background:#d9d5cd; color:#2c2620;
+    padding:48px 20px 80px; -webkit-font-smoothing:antialiased; }
+  h1{ text-align:center; font-weight:800; font-size:28px; }
+  p.sub{ text-align:center; font-weight:400; color:#6f6a61; margin:6px 0 36px; }
+  .grid{ max-width:760px; margin:0 auto; display:grid; gap:14px; }
+  a.card{ display:flex; align-items:center; justify-content:space-between; text-decoration:none;
+    color:#2c2620; background:#fff; border-radius:14px; padding:20px 24px;
+    box-shadow:0 8px 24px rgba(0,0,0,.10); transition:transform .15s, box-shadow .15s; }
+  a.card:hover{ transform:translateY(-2px); box-shadow:0 12px 30px rgba(0,0,0,.16); }
+  a.card b{ font-weight:800; font-size:18px; }
+  a.card small{ display:block; color:#6f6a61; font-weight:400; margin-top:3px; }
+  a.card .go{ width:34px; height:34px; border-radius:9px; background:#d8b878; color:#2a2114;
+    display:grid; place-items:center; font-weight:800; }
+</style>
+</head>
+<body>
+  <h1>Real Estate Ad Designs</h1>
+  <p class="sub">Each design as a standalone HTML file · Font: <b>Almarai</b> (Google Fonts)</p>
+  <div class="grid">
+    <a class="card" href="listing-card-en.html"><div><b>Listing Card — English</b><small>Luxury Apartment · For Rent</small></div><span class="go">›</span></a>
+    <a class="card" href="listing-card-ar.html"><div><b>Listing Card — Arabic (RTL)</b><small>شقة سكنية فاخرة · للإيجار</small></div><span class="go">›</span></a>
+    <a class="card" href="coming-soon-en.html"><div><b>Coming Soon — English</b><small>Premium development teaser</small></div><span class="go">›</span></a>
+    <a class="card" href="coming-soon-ar.html"><div><b>Coming Soon — Arabic (RTL)</b><small>مشروع سكني فاخر · قريباً</small></div><span class="go">›</span></a>
+    <a class="card" href="tower-story-en.html"><div><b>Tower Story — English</b><small>Full-bleed vertical listing</small></div><span class="go">›</span></a>
+  </div>
+</body>
+</html>
